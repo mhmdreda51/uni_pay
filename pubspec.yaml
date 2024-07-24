@@ -1,0 +1,64 @@
+# A library for making online payment by using Moyasar and Tamara payment gateway
+name: uni_pay
+description: A library for making online payment by using Moyasar, Tamara, and Tabby payment gateway.
+version: 2.0.1
+
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+
+environment:
+  sdk: ">=3.3.2 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #* Localizations
+  flutter_localizations:
+    sdk: flutter
+
+  #* Netowrk and http calls
+  http: ^1.2.0
+
+  #* Moyasar payment gateway
+  moyasar: ^2.0.11
+
+  #* UI and UX related
+  lottie: ^3.1.2
+
+  #* Tabby payment gateway
+  tabby_flutter_inapp_sdk: ^1.4.0
+
+  #* Webview
+  flutter_inappwebview: ^5.7.2+3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  assets:
+    - assets/animations/
+    - assets/images/
+
+  fonts:
+    - family: IBMPlexSansArabic
+      fonts:
+        - asset: assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Light.ttf
+          weight: 300
+        - asset: assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/IBMPlexSansArabic/IBMPlexSansArabic-Bold.ttf
+          weight: 700
